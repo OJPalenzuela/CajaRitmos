@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/cajaderitmos/static/css/main.ac26a8c5.chunk.css",
+    "main.js": "/cajaderitmos/static/js/main.fc326066.chunk.js",
+    "main.js.map": "/cajaderitmos/static/js/main.fc326066.chunk.js.map",
+    "runtime-main.js": "/cajaderitmos/static/js/runtime-main.455ee770.js",
+    "runtime-main.js.map": "/cajaderitmos/static/js/runtime-main.455ee770.js.map",
+    "static/js/2.7bd19836.chunk.js": "/cajaderitmos/static/js/2.7bd19836.chunk.js",
+    "static/js/2.7bd19836.chunk.js.map": "/cajaderitmos/static/js/2.7bd19836.chunk.js.map",
+    "index.html": "/cajaderitmos/index.html",
+    "static/css/main.ac26a8c5.chunk.css.map": "/cajaderitmos/static/css/main.ac26a8c5.chunk.css.map",
+    "static/js/2.7bd19836.chunk.js.LICENSE.txt": "/cajaderitmos/static/js/2.7bd19836.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.455ee770.js",
+    "static/js/2.7bd19836.chunk.js",
+    "static/css/main.ac26a8c5.chunk.css",
+    "static/js/main.fc326066.chunk.js"
+  ]
+}
