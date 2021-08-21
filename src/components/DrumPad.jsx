@@ -1,10 +1,15 @@
 import React from 'react'
 import '../styles/DrumStyles.css'
 import { useName } from '../hooks/useName'
+import { useDispatch } from 'react-redux'
+import { nameType } from '../actions/actions'
 
 const DrumPad = () => {
+
+    const dispatch = useDispatch();
+
     const [name, handleInputChange, reset] = useName({
-        nombre: ""
+        name: ''
     })
 
     const handleClick = (e) => {
@@ -13,12 +18,12 @@ const DrumPad = () => {
         audio.load()
         audio.play()
 
-        
+        dispatch(nameType(name))
     }
 
     return (
         <div className="drum">
-            <div className="drum-pad" onClick={handleClick} id="Q-pad">
+            <div className="drum-pad" onClick={handleClick}>
                 <audio className="clip" id="Q" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3"></audio>Q</div>
 
             <div className="drum-pad" onClick={handleClick}>

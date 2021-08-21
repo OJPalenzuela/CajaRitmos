@@ -10,7 +10,7 @@ export const useName = ( initialState = {} ) => {
  
     const handleInputChange = ({ target }) => {
         setName({
-            nombre: target.querySelector('audio').id
+            name: target.querySelector('audio').id
         });
     }
  
