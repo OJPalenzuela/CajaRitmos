@@ -1,15 +1,14 @@
 import React from 'react'
 import '../styles/ControlStyle.css'
-import { useName } from '../hooks/useName'
+import { useSelector } from 'react-redux'
 
 const Controls = () => {
     
+    const {name} = useSelector(store => store.name)
 
     return (
         <div className="controls">
-            <div>Power</div>
-            <div>Slider</div>
-            <div id="display"></div>
+            <div id="display">{name.name}</div>
         </div>
     )
 }

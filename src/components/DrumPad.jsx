@@ -12,25 +12,29 @@ const DrumPad = () => {
         name: ''
     })
 
-    const handleClick = (e) => {
-        handleInputChange(e);
-        const audio = e.target.querySelector('audio');
+    const handleClick = ({target}) => {
+        handleInputChange(target)
+        const audio = target.querySelector('audio');
         audio.load()
         audio.play()
 
         dispatch(nameType(name))
+
+        console.log(name)
+
+        
     }
 
     return (
         <div className="drum">
             <div className="drum-pad" onClick={handleClick}>
-                <audio className="clip" id="Q" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3"></audio>Q</div>
+                <audio className="clip" id="Q" value="HANDLE" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3"></audio>Q</div>
 
             <div className="drum-pad" onClick={handleClick}>
                 <audio className="clip" id="W" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/CP.mp3"></audio>W</div>
 
             <div className="drum-pad" onClick={handleClick}>
-                <audio className="clip" id="E" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/SD0025.mp3"></audio>E</div>
+                <audio value="A" className="clip" id="E" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/SD0025.mp3"></audio>E</div>
 
             <div className="drum-pad" onClick={handleClick}>
                 <audio className="clip" id="A" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/SD0010.mp3"></audio>A</div>

@@ -11,4 +11,6 @@
 #display{
     background-color: grey;
     padding: 12px;
+    width: 200%;
+    text-align: center;
 }
